@@ -1,0 +1,714 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-07-18T09:14:58.431Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "546b8579-bd07-4202-97c8-23e84796055a",
+    "object_repr": "Communication object (546b8579-bd07-4202-97c8-23e84796055a)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-07-18T09:15:04.559Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5d1c1ac9-4287-42b7-a2c4-0cfd0b9355b7",
+    "object_repr": "Communication object (5d1c1ac9-4287-42b7-a2c4-0cfd0b9355b7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-07-18T09:15:11.214Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "0077101d-81fb-42fb-a5bc-b1457c05c232",
+    "object_repr": "Communication object (0077101d-81fb-42fb-a5bc-b1457c05c232)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-07-18T09:15:20.421Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "d137314f-a756-4c49-870f-fb91e435ff1c",
+    "object_repr": "Communication object (d137314f-a756-4c49-870f-fb91e435ff1c)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-07-18T09:15:28.828Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "06c7c894-89c2-49aa-9a69-884bb04929a2",
+    "object_repr": "Communication object (06c7c894-89c2-49aa-9a69-884bb04929a2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-07-18T09:15:34.956Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7257dc78-fa0a-4fa0-8d61-29f7ef297cc3",
+    "object_repr": "Communication object (7257dc78-fa0a-4fa0-8d61-29f7ef297cc3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-07-18T09:15:42.265Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "71838540-f7bd-4ed6-8e4c-651c45326920",
+    "object_repr": "Communication object (71838540-f7bd-4ed6-8e4c-651c45326920)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-07-18T09:17:09.624Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "db1d7239-ddec-49ec-a651-cdfca956f2a0",
+    "object_repr": "Passport object (db1d7239-ddec-49ec-a651-cdfca956f2a0)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-07-18T09:17:41.348Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
+    "object_repr": "Passport object (aa613167-2aa5-44e7-bf27-c295da1f6a05)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-07-18T09:20:07.883Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "b97a9846-86eb-49f5-8d96-024bce5a6070",
+    "object_repr": "╨Я╨░╤Б╨┐╨╛╤А╤В 5566 654654, ╨Т╤Л╨┤╨░╨╜ ╨Ю╨Т╨Ф ╨│. ╨Ь╨╛╤Б╨║╨▓╤Л, ╨Ф╨░╤В╨░ ╨▓╤Л╨┤╨░╤З╨╕: 2023-01-09",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-07-18T09:20:24.225Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2d6cc763-5fe9-4ef4-a67c-6c1a6fc47f29",
+    "object_repr": "╨Я╨░╤Б╨┐╨╛╤А╤В 0000 000000, ╨Т╤Л╨┤╨░╨╜ ╨Ю╨Т╨Ф ╨г╨╗╨░╨╜-╨г╨┤╤Н, ╨Ф╨░╤В╨░ ╨▓╤Л╨┤╨░╤З╨╕: 2023-02-08",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-07-18T09:20:35.061Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "ec2c1f05-8a6b-4fa5-830e-8e635e527f7b",
+    "object_repr": "Document object (ec2c1f05-8a6b-4fa5-830e-8e635e527f7b)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-07-18T09:20:36.127Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "e94016d9-1ada-4247-933f-16933ef06dd2",
+    "object_repr": "Document object (e94016d9-1ada-4247-933f-16933ef06dd2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-07-18T09:20:37.112Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "dadf2276-3508-4239-8091-dad12dafc4bf",
+    "object_repr": "Document object (dadf2276-3508-4239-8091-dad12dafc4bf)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-07-18T09:20:37.943Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "ef26c32e-b688-4395-9b94-28c4a2285a0a",
+    "object_repr": "Document object (ef26c32e-b688-4395-9b94-28c4a2285a0a)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-07-18T09:22:20.191Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "object_repr": "Address object (6f861740-9b66-43ac-9648-bd4a49b4f9e7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-07-18T09:26:10.742Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "object_repr": "454886: ╨│. ╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║, ╤Г╨╗. ╨Ы╨╡╨╜╨╕╨╜╨░, ╨┤. 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0447\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0438\\u043d\\u0434\\u0435\\u043a\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-07-18T09:26:42.916Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
+    "object_repr": "456110: ╨Ъ╨░╤В╨░╨▓-╨Ш╨▓╨░╨╜╨╛╨▓╤Б╨║, ╨Ы╨╡╨╜╨╕╨╜╨░, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-07-18T09:27:12.527Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "cc19342f-0a01-45ed-9b35-8972b0615760",
+    "object_repr": "515222: ╨Ь╨╛╤Б╨║╨▓╨░, ╨Я╤А╨╛╨╗╨╡╤В╨░╤А╤Б╨║╨░╤П, 12╨▒",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-07-18T09:27:40.930Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6231a26c-04fa-4449-bff6-cf78af64f87b",
+    "object_repr": "665665: ╨Т╨╗╨░╨┤╨╕╨▓╨╛╤Б╤В╨╛╨║, ╨Ь╨╛╤А╤Б╨║╨░╤П, 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-07-18T09:32:25.390Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "30703136-052e-4bc1-adf9-db84d76b61eb",
+    "object_repr": "Job object (30703136-052e-4bc1-adf9-db84d76b61eb)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-07-18T09:35:29.390Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "f5dfcd9a-8b4c-4f85-9f34-1952943c342b",
+    "object_repr": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М: +79885523322, 2023-07-18",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-07-18T09:36:13.732Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1cd0c379-429e-41e5-9729-4be8d05f6298",
+    "object_repr": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М: +79227028987, 2023-07-18",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-07-18T09:38:26.585Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Client object (7ccc9f18-bd1a-4a85-a323-e8bec11047d1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-07-18T09:39:59.413Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6f628498-8ee0-455c-9238-4a8039864efb",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Я╨╡╤В╤А ╨Я╨╡╤В╤А╨╛╨▓",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-07-18T10:17:20.105Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Ш╨▓╨░╨╜ ╨Ш╨▓╨░╨╜╨╛╨▓",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0434\\u0435\\u043d\\u0442\\u0438\\u0444\\u0438\\u043a\\u0430\\u0442\\u043e\\u0440\\u044b \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u0432\", \"Jobs\", \"Communications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-07-18T10:17:33.572Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6f628498-8ee0-455c-9238-4a8039864efb",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Я╨╡╤В╤А ╨Я╨╡╤В╤А╨╛╨▓",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0434\\u0435\\u043d\\u0442\\u0438\\u0444\\u0438\\u043a\\u0430\\u0442\\u043e\\u0440\\u044b \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u0432\", \"Jobs\", \"Communications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-07-18T10:18:26.808Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45dc553e-856f-498e-9b23-ec8ff2a0dc3f",
+    "object_repr": "Child object (45dc553e-856f-498e-9b23-ec8ff2a0dc3f)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-07-18T10:25:07.367Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Ш╨▓╨░╨╜ ╨Ш╨▓╨░╨╜╨╛╨▓",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u0442\\u0438\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$AGkau9O7wlREq4kS74E3sm$7ATlItf13gmcz4qtJCrCkgWuVCb5WYFaOS0Ce1WcR5c=",
+    "last_login": "2023-07-18T09:05:19.134Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-07-18T09:04:50.343Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mnb8ir3uxs4jreed2l6655dikzdn539j",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-xBubkp4zWLvrNQmgWMqnQtwdIqWA9s3Me6mM2zrkbZE5j0WdlVWn342QHzLtoNxxujXNbVrnkfSu6IMu-tqKPC-H-3cw4DJ8a28jOPYcqwHxxEhsTelNcT5GREeQgAL3XeeBKqRqOUgSsKFKqqZT7w_kmTgG:1qLgdz:Vp0PUw8z92G-Pi6_16OSO3245zdDr-RlDXkAQOtMYRY",
+    "expire_date": "2023-08-01T09:05:19.196Z"
+  }
+},
+{
+  "model": "clients.document",
+  "pk": "dadf2276-3508-4239-8091-dad12dafc4bf",
+  "fields": {}
+},
+{
+  "model": "clients.document",
+  "pk": "e94016d9-1ada-4247-933f-16933ef06dd2",
+  "fields": {}
+},
+{
+  "model": "clients.document",
+  "pk": "ec2c1f05-8a6b-4fa5-830e-8e635e527f7b",
+  "fields": {}
+},
+{
+  "model": "clients.document",
+  "pk": "ef26c32e-b688-4395-9b94-28c4a2285a0a",
+  "fields": {}
+},
+{
+  "model": "clients.address",
+  "pk": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
+  "fields": {
+    "createdAt": "2023-07-18T09:26:42.907Z",
+    "updatedAt": "2023-07-18T09:26:42.907Z",
+    "zipCode": "456110",
+    "country": "╨а╨╛╤Б╤Б╨╕╤П",
+    "region": "╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║╨░╤П ╨╛╨▒╨╗╨░╤Б╤В╤М",
+    "city": "╨Ъ╨░╤В╨░╨▓-╨Ш╨▓╨░╨╜╨╛╨▓╤Б╨║",
+    "street": "╨Ы╨╡╨╜╨╕╨╜╨░",
+    "house": "1",
+    "apartment": "11"
+  }
+},
+{
+  "model": "clients.address",
+  "pk": "6231a26c-04fa-4449-bff6-cf78af64f87b",
+  "fields": {
+    "createdAt": "2023-07-18T09:27:40.926Z",
+    "updatedAt": "2023-07-18T09:27:40.926Z",
+    "zipCode": "665665",
+    "country": "╨а╨╛╤Б╤Б╨╕╤П",
+    "region": "╨Я╤А╨╕╨╝╨╛╤А╤Б╨║╨╕╨╣ ╨║╤А╨░╨╣",
+    "city": "╨Т╨╗╨░╨┤╨╕╨▓╨╛╤Б╤В╨╛╨║",
+    "street": "╨Ь╨╛╤А╤Б╨║╨░╤П",
+    "house": "12",
+    "apartment": "32"
+  }
+},
+{
+  "model": "clients.address",
+  "pk": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+  "fields": {
+    "createdAt": "2023-07-18T09:22:20.185Z",
+    "updatedAt": "2023-07-18T09:26:10.738Z",
+    "zipCode": "454886",
+    "country": "╨а╨╛╤Б╤Б╨╕╤П",
+    "region": "╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║╨░╤П ╨╛╨▒╨╗╨░╤Б╤В╤М",
+    "city": "╨│. ╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║",
+    "street": "╤Г╨╗. ╨Ы╨╡╨╜╨╕╨╜╨░",
+    "house": "╨┤. 1",
+    "apartment": ""
+  }
+},
+{
+  "model": "clients.address",
+  "pk": "cc19342f-0a01-45ed-9b35-8972b0615760",
+  "fields": {
+    "createdAt": "2023-07-18T09:27:12.519Z",
+    "updatedAt": "2023-07-18T09:27:12.519Z",
+    "zipCode": "515222",
+    "country": "╨а╨╛╤Б╤Б╨╕╤П",
+    "region": "╨Ь╨╛╤Б╨║╨▓╨░",
+    "city": "╨Ь╨╛╤Б╨║╨▓╨░",
+    "street": "╨Я╤А╨╛╨╗╨╡╤В╨░╤А╤Б╨║╨░╤П",
+    "house": "12╨▒",
+    "apartment": "12╨▒╨╕╤Б"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "0077101d-81fb-42fb-a5bc-b1457c05c232",
+  "fields": {
+    "type": "email",
+    "value": "user_2@mail.ru"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "06c7c894-89c2-49aa-9a69-884bb04929a2",
+  "fields": {
+    "type": "phone",
+    "value": "79992223344"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "546b8579-bd07-4202-97c8-23e84796055a",
+  "fields": {
+    "type": "email",
+    "value": "admin@mail.ru"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "5d1c1ac9-4287-42b7-a2c4-0cfd0b9355b7",
+  "fields": {
+    "type": "email",
+    "value": "user@mail.ru"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "71838540-f7bd-4ed6-8e4c-651c45326920",
+  "fields": {
+    "type": "phone",
+    "value": "79995554433"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "7257dc78-fa0a-4fa0-8d61-29f7ef297cc3",
+  "fields": {
+    "type": "phone",
+    "value": "79996665544"
+  }
+},
+{
+  "model": "clients.communication",
+  "pk": "d137314f-a756-4c49-870f-fb91e435ff1c",
+  "fields": {
+    "type": "email",
+    "value": "user_3@email.ru"
+  }
+},
+{
+  "model": "clients.job",
+  "pk": "1cd0c379-429e-41e5-9729-4be8d05f6298",
+  "fields": {
+    "createdAt": "2023-07-18T09:36:13.727Z",
+    "updatedAt": "2023-07-18T09:36:13.727Z",
+    "type": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М",
+    "dateEmp": "2023-07-18",
+    "dateDismissal": null,
+    "monIncome": "100000.00",
+    "tin": "745105933671",
+    "factAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "jurAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "phoneNumber": "+79227028987"
+  }
+},
+{
+  "model": "clients.job",
+  "pk": "30703136-052e-4bc1-adf9-db84d76b61eb",
+  "fields": {
+    "createdAt": "2023-07-18T09:32:25.385Z",
+    "updatedAt": "2023-07-18T09:32:25.385Z",
+    "type": "╨Ю╤Б╨╜╨╛╨▓╨╜╨░╤П ╤А╨░╨▒╨╛╤В╨░",
+    "dateEmp": "2023-06-01",
+    "dateDismissal": null,
+    "monIncome": "12000.01",
+    "tin": "745313727535",
+    "factAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "jurAddress": "cc19342f-0a01-45ed-9b35-8972b0615760",
+    "phoneNumber": "+79962321101"
+  }
+},
+{
+  "model": "clients.job",
+  "pk": "f5dfcd9a-8b4c-4f85-9f34-1952943c342b",
+  "fields": {
+    "createdAt": "2023-07-18T09:35:29.384Z",
+    "updatedAt": "2023-07-18T09:35:29.384Z",
+    "type": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М",
+    "dateEmp": "2023-07-18",
+    "dateDismissal": "2023-07-18",
+    "monIncome": "1.00",
+    "tin": "745105933671",
+    "factAddress": "cc19342f-0a01-45ed-9b35-8972b0615760",
+    "jurAddress": "cc19342f-0a01-45ed-9b35-8972b0615760",
+    "phoneNumber": "+79885523322"
+  }
+},
+{
+  "model": "clients.passport",
+  "pk": "2d6cc763-5fe9-4ef4-a67c-6c1a6fc47f29",
+  "fields": {
+    "createdAt": "2023-07-18T09:20:24.221Z",
+    "updatedAt": "2023-07-18T09:20:24.221Z",
+    "series": "0000",
+    "number": "000000",
+    "giver": "╨Ю╨Т╨Ф ╨г╨╗╨░╨╜-╨г╨┤╤Н",
+    "dateIssued": "2023-02-08"
+  }
+},
+{
+  "model": "clients.passport",
+  "pk": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
+  "fields": {
+    "createdAt": "2023-07-18T09:17:41.344Z",
+    "updatedAt": "2023-07-18T09:17:41.344Z",
+    "series": "8855",
+    "number": "654544",
+    "giver": "╨Ю╨Т╨Ф ╨Ъ╨░╨╗╨╕╨╜╨╕╤Б╨║╨╛╨│╨╛ ╤А╨░╨╣╨╛╨╜╨░ ╨│. ╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║╨░",
+    "dateIssued": "2022-12-07"
+  }
+},
+{
+  "model": "clients.passport",
+  "pk": "b97a9846-86eb-49f5-8d96-024bce5a6070",
+  "fields": {
+    "createdAt": "2023-07-18T09:20:07.876Z",
+    "updatedAt": "2023-07-18T09:20:07.876Z",
+    "series": "5566",
+    "number": "654654",
+    "giver": "╨Ю╨Т╨Ф ╨│. ╨Ь╨╛╤Б╨║╨▓╤Л",
+    "dateIssued": "2023-01-09"
+  }
+},
+{
+  "model": "clients.passport",
+  "pk": "db1d7239-ddec-49ec-a651-cdfca956f2a0",
+  "fields": {
+    "createdAt": "2023-07-18T09:17:09.620Z",
+    "updatedAt": "2023-07-18T09:17:09.620Z",
+    "series": "7500",
+    "number": "235454",
+    "giver": "╨Ю╨Т╨Ф ╨в╤А╨░╨║╤В╨╛╤А╨╛╨╖╨░╨▓╨╛╨┤╤Б╨║╨╛╨│╨╛ ╤А╨░╨╣╨╛╨╜╨░ ╨│. ╨з╨╡╨╗╤П╨▒╨╕╨╜╤Б╨║╨░",
+    "dateIssued": "2023-07-18"
+  }
+},
+{
+  "model": "clients.child",
+  "pk": "45dc553e-856f-498e-9b23-ec8ff2a0dc3f",
+  "fields": {
+    "createdAt": "2023-07-18T10:18:26.802Z",
+    "updatedAt": "2023-07-18T10:18:26.802Z",
+    "name": "╨Я╨╡╤В╤А",
+    "surname": "╨Ш╨▓╨░╨╜╨╛╨▓",
+    "patronymic": "╨Ш╨▓╨░╨╜╨╛╨▓╨╕╤З",
+    "dob": "2023-07-18"
+  }
+},
+{
+  "model": "clients.client",
+  "pk": "6f628498-8ee0-455c-9238-4a8039864efb",
+  "fields": {
+    "createdAt": "2023-07-18T09:39:59.406Z",
+    "updatedAt": "2023-07-18T10:17:33.557Z",
+    "name": "╨Я╨╡╤В╤А",
+    "surname": "╨Я╨╡╤В╤А╨╛╨▓",
+    "patronymic": "╨Я╨╡╤В╤А╨╛╨▓╨╕╤З",
+    "dob": "2023-05-03",
+    "passport": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
+    "livingAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
+    "regAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
+    "curWorkExp": 123,
+    "typeEducation": "╨б╤А╨╡╨┤╨╜╨╡╨╡",
+    "monIncome": "12312.00",
+    "monExpenses": "123.00",
+    "children": [],
+    "documentIds": [
+      "dadf2276-3508-4239-8091-dad12dafc4bf",
+      "ef26c32e-b688-4395-9b94-28c4a2285a0a"
+    ],
+    "jobs": [
+      "1cd0c379-429e-41e5-9729-4be8d05f6298"
+    ],
+    "communications": [
+      "71838540-f7bd-4ed6-8e4c-651c45326920",
+      "7257dc78-fa0a-4fa0-8d61-29f7ef297cc3"
+    ]
+  }
+},
+{
+  "model": "clients.client",
+  "pk": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+  "fields": {
+    "createdAt": "2023-07-18T09:38:26.577Z",
+    "updatedAt": "2023-07-18T10:25:07.354Z",
+    "name": "╨Ш╨▓╨░╨╜",
+    "surname": "╨Ш╨▓╨░╨╜╨╛╨▓",
+    "patronymic": "╨Ш╨▓╨░╨╜╨╛╨▓╨╕╤З",
+    "dob": "2023-07-18",
+    "passport": "db1d7239-ddec-49ec-a651-cdfca956f2a0",
+    "livingAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "regAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
+    "curWorkExp": 1,
+    "typeEducation": "╨Т╤Л╤Б╤И╨╡╨╡",
+    "monIncome": "100000.00",
+    "monExpenses": "10000.00",
+    "children": [
+      "45dc553e-856f-498e-9b23-ec8ff2a0dc3f"
+    ],
+    "documentIds": [
+      "e94016d9-1ada-4247-933f-16933ef06dd2",
+      "ec2c1f05-8a6b-4fa5-830e-8e635e527f7b"
+    ],
+    "jobs": [
+      "30703136-052e-4bc1-adf9-db84d76b61eb",
+      "f5dfcd9a-8b4c-4f85-9f34-1952943c342b"
+    ],
+    "communications": [
+      "546b8579-bd07-4202-97c8-23e84796055a",
+      "5d1c1ac9-4287-42b7-a2c4-0cfd0b9355b7"
+    ]
+  }
+}
+]
