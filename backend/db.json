@@ -377,6 +377,71 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-07-19T07:33:51.461Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "f5dfcd9a-8b4c-4f85-9f34-1952943c342b",
+    "object_repr": "main: +79885523322, 2023-07-18",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-07-19T07:33:56.294Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "30703136-052e-4bc1-adf9-db84d76b61eb",
+    "object_repr": "part_time: +79962321101, 2023-06-01",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-07-19T07:34:00.057Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1cd0c379-429e-41e5-9729-4be8d05f6298",
+    "object_repr": "main: +79227028987, 2023-07-18",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u0440\\u0430\\u0431\\u043e\\u0442\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-07-19T08:47:39.846Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Ш╨▓╨░╨╜ ╨Ш╨▓╨░╨╜╨╛╨▓",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u043e\\u0431\\u0440\\u0430\\u0437\\u043e\\u0432\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-07-19T08:47:46.940Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6f628498-8ee0-455c-9238-4a8039864efb",
+    "object_repr": "╨Ъ╨╗╨╕╨╡╨╜╤В: ╨Я╨╡╤В╤А ╨Я╨╡╤В╤А╨╛╨▓",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u043e\\u0431\\u0440\\u0430\\u0437\\u043e\\u0432\\u0430\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
@@ -543,8 +608,8 @@
   "pk": "1cd0c379-429e-41e5-9729-4be8d05f6298",
   "fields": {
     "createdAt": "2023-07-18T09:36:13.727Z",
-    "updatedAt": "2023-07-18T09:36:13.727Z",
-    "type": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М",
+    "updatedAt": "2023-07-19T07:34:00.042Z",
+    "type": "main",
     "dateEmp": "2023-07-18",
     "dateDismissal": null,
     "monIncome": "100000.00",
@@ -559,8 +624,8 @@
   "pk": "30703136-052e-4bc1-adf9-db84d76b61eb",
   "fields": {
     "createdAt": "2023-07-18T09:32:25.385Z",
-    "updatedAt": "2023-07-18T09:32:25.385Z",
-    "type": "╨Ю╤Б╨╜╨╛╨▓╨╜╨░╤П ╤А╨░╨▒╨╛╤В╨░",
+    "updatedAt": "2023-07-19T07:33:56.287Z",
+    "type": "part_time",
     "dateEmp": "2023-06-01",
     "dateDismissal": null,
     "monIncome": "12000.01",
@@ -575,8 +640,8 @@
   "pk": "f5dfcd9a-8b4c-4f85-9f34-1952943c342b",
   "fields": {
     "createdAt": "2023-07-18T09:35:29.384Z",
-    "updatedAt": "2023-07-18T09:35:29.384Z",
-    "type": "╨з╨░╤Б╤В╨╕╤З╨╜╨░╤П ╨╖╨░╨╜╤П╤В╨╛╤Б╤В╤М",
+    "updatedAt": "2023-07-19T07:33:51.443Z",
+    "type": "main",
     "dateEmp": "2023-07-18",
     "dateDismissal": "2023-07-18",
     "monIncome": "1.00",
@@ -651,7 +716,7 @@
   "pk": "6f628498-8ee0-455c-9238-4a8039864efb",
   "fields": {
     "createdAt": "2023-07-18T09:39:59.406Z",
-    "updatedAt": "2023-07-18T10:17:33.557Z",
+    "updatedAt": "2023-07-19T08:47:46.913Z",
     "name": "╨Я╨╡╤В╤А",
     "surname": "╨Я╨╡╤В╤А╨╛╨▓",
     "patronymic": "╨Я╨╡╤В╤А╨╛╨▓╨╕╤З",
@@ -660,7 +725,7 @@
     "livingAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
     "regAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
     "curWorkExp": 123,
-    "typeEducation": "╨б╤А╨╡╨┤╨╜╨╡╨╡",
+    "typeEducation": "higher",
     "monIncome": "12312.00",
     "monExpenses": "123.00",
     "children": [],
@@ -682,7 +747,7 @@
   "pk": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
   "fields": {
     "createdAt": "2023-07-18T09:38:26.577Z",
-    "updatedAt": "2023-07-18T10:25:07.354Z",
+    "updatedAt": "2023-07-19T08:47:39.820Z",
     "name": "╨Ш╨▓╨░╨╜",
     "surname": "╨Ш╨▓╨░╨╜╨╛╨▓",
     "patronymic": "╨Ш╨▓╨░╨╜╨╛╨▓╨╕╤З",
@@ -691,7 +756,7 @@
     "livingAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
     "regAddress": "6f861740-9b66-43ac-9648-bd4a49b4f9e7",
     "curWorkExp": 1,
-    "typeEducation": "╨Т╤Л╤Б╤И╨╡╨╡",
+    "typeEducation": "secondary",
     "monIncome": "100000.00",
     "monExpenses": "10000.00",
     "children": [

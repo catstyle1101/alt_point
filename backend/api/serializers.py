@@ -1,13 +1,7 @@
+from django.conf import settings
 from rest_framework import serializers as s
 
 from clients import models as m
-
-
-class JobSerializer(s.ModelSerializer):
-
-    class Meta:
-        model = m.Job
-        fields = '__all__'
 
 
 class PassportSerializer(s.ModelSerializer):
@@ -45,13 +39,19 @@ class ChildrenSerializer(s.ModelSerializer):
         fields = '__all__'
 
 
+class JobSerializer(s.ModelSerializer):
+    factAddress = AddressSerializer()
+    jurAddress = AddressSerializer()
+
+    class Meta:
+        model = m.Job
+        fields = '__all__'
+
+
 class ClientSerializer(s.ModelSerializer):
-    jobs = JobSerializer(many=True)
-    passport = PassportSerializer()
-    livingAddress = AddressSerializer()
-    regAddress = AddressSerializer()
-    communications = CommunicationsSerializer(many=True)
-    children = ChildrenSerializer(many=True)
+    jobs = JobSerializer(many=True, read_only=True)
+    communications = CommunicationsSerializer(many=True, read_only=True)
+    children = ChildrenSerializer(many=True, read_only=True)
 
     class Meta:
         model = m.Client

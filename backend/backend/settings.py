@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_filters',
     'phonenumber_field',
     'clients.apps.ClientsConfig',
+    'utils',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 REST_FRAMEWORK = {
-    'EXCEPTION_HANDLER': 'api.exceptions.custom_exception_handler'
+    'EXCEPTION_HANDLER': 'utils.exceptions.custom_exception_handler',
+    'COERCE_DECIMAL_TO_STRING': False,
 }
 
 
@@ -145,3 +147,4 @@ MAX_HOUSE_NAME_LENGTH = 20
 MAX_APARTMENT_NAME_LENGTH = 20
 TIN_NUMBER_LENGTH = 12
 MAX_MONEY_DIGITS = 10
+MAX_MONEY_DECIMAL_PLACES = 2
