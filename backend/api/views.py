@@ -24,26 +24,6 @@ class ClientViewset(ModelViewSet):
 
         ---
         """
-        if passport_data := request.data.pop('passport'):
-            ser = s.PassportSerializer(data=passport_data)
-            ser.is_valid()
-            ser.save()
-            request.data['passport'] = ser.data.get('id')
-        if living_address_data := request.data.pop('livingAddress'):
-            ser = s.AddressSerializer(data=living_address_data)
-            ser.is_valid()
-            ser.save()
-            request.data['livingAddress'] = ser.data.get('id')
-        if reg_address_data := request.data.pop('regAddress'):
-            ser = s.AddressSerializer(data=reg_address_data)
-            ser.is_valid()
-            ser.save()
-            request.data['regAddress'] = ser.data.get('id')
-        if doc_ids := request.data.pop('documentIds'):
-            ser = s.DocumentsSerializer(data=doc_ids)
-            ser.is_valid()
-            ser.save()
-            request.data['documentIds'] = ser.data.get('id')
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
