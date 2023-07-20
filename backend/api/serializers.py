@@ -47,7 +47,8 @@ class JobSerializer(s.ModelSerializer):
         model = m.Job
         fields = '__all__'
 
-class SpouseClientSerializer(s.ModelSerializer):
+
+class BaseClientSerializer(s.ModelSerializer):
     jobs = JobSerializer(many=True)
     communications = CommunicationsSerializer(many=True)
     children = ChildrenSerializer(many=True)
@@ -57,23 +58,7 @@ class SpouseClientSerializer(s.ModelSerializer):
     documentIds = DocumentsSerializer(many=True)
 
     class Meta:
-        model = m.Client
-        exclude = ('spouse',)
-
-
-class ClientSerializer(s.ModelSerializer):
-    jobs = JobSerializer(many=True)
-    communications = CommunicationsSerializer(many=True)
-    children = ChildrenSerializer(many=True)
-    passport = PassportSerializer()
-    livingAddress = AddressSerializer()
-    regAddress = AddressSerializer()
-    documentIds = DocumentsSerializer(many=True)
-    # spouse = SpouseClientSerializer()
-
-    class Meta:
-        model = m.Client
-        fields = '__all__'
+        abstract = True
 
     def _add_fk_related_object(
             self, validated_data, key, model):
@@ -89,6 +74,11 @@ class ClientSerializer(s.ModelSerializer):
         attr.set(all_instances)
 
     def create(self, validated_data):
+        if 'spouse' in validated_data:
+            serializer = SpouseClientSerializer(
+                data=validated_data.pop('spouse'))
+            if serializer.is_valid(raise_exception=True):
+                validated_data['spouse'] = serializer.save()
         for key, model in (
             ('passport', m.Passport),
             ('livingAddress', m.Address),
@@ -111,4 +101,17 @@ class ClientSerializer(s.ModelSerializer):
                 data, validated_data, key, model, client)
         return client
 
-    d
+
+class SpouseClientSerializer(BaseClientSerializer):
+
+    class Meta:
+        model = m.Client
+        exclude = ('spouse',)
+
+
+class ClientSerializer(BaseClientSerializer):
+    spouse = SpouseClientSerializer()
+
+    class Meta:
+        model = m.Client
+        fields = '__all__'

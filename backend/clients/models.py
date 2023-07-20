@@ -248,6 +248,13 @@ class Client(BasePerson):
         related_name='client',
         blank=True,
     )
+    spouse = models.OneToOneField(
+        'Client',
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name='Супруг(а)'
+    )
 
     is_deleted = models.BooleanField(default=False)
 

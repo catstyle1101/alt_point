@@ -5,10 +5,10 @@ from clients import models as m
 
 def make_description(model, field, attr):
     field_name = getattr(model, field).field.verbose_name
-    result = f"{field_name}\n"
+    result = f'{field_name}\n'
     types = getattr(model, attr)
     for link, name in types:
-        result += f"* {link} - {name}\n"
+        result += f'* {link} - {name}\n'
     return result
 
 
@@ -19,11 +19,29 @@ child = o.Schema(
         'id': o.Schema(
             type=o.TYPE_STRING, format=o.FORMAT_UUID, read_only=True
         ),
-        'name': o.Schema(title=m.Child.name.field.verbose_name, type=o.TYPE_STRING, example='Иван', nullable=m.Child.name.field.blank),
-        'surname': o.Schema(title=m.Child.surname.field.verbose_name, type=o.TYPE_STRING, example='Иванов', nullable=m.Child.surname.field.blank),
-        'patronymic': o.Schema(title=m.Child.patronymic.field.verbose_name, type=o.TYPE_STRING, example='Иванович', nullable=m.Child.patronymic.field.blank),
-        'dob': o.Schema(title=m.Child.dob.field.verbose_name,
-            type=o.FORMAT_DATETIME, example='2022-07-10T00:00:00.000Z', nullable=m.Child.dob.field.blank
+        'name': o.Schema(
+            title=m.Child.name.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='Иван',
+            nullable=m.Child.name.field.blank,
+        ),
+        'surname': o.Schema(
+            title=m.Child.surname.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='Иванов',
+            nullable=m.Child.surname.field.blank,
+        ),
+        'patronymic': o.Schema(
+            title=m.Child.patronymic.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='Иванович',
+            nullable=m.Child.patronymic.field.blank,
+        ),
+        'dob': o.Schema(
+            title=m.Child.dob.field.verbose_name,
+            type=o.FORMAT_DATETIME,
+            example='2022-07-10T00:00:00.000Z',
+            nullable=m.Child.dob.field.blank,
         ),
     },
 )
@@ -60,7 +78,7 @@ passport = o.Schema(
         'giver': o.Schema(
             title=m.Passport.giver.field.verbose_name,
             type=o.TYPE_STRING,
-            example='ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска',
+            example='ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска',
             nullable=m.Passport.giver.field.blank,
         ),
         'dateIssued': o.Schema(
@@ -82,7 +100,9 @@ communication = o.Schema(
             title=m.Communication.type.field.verbose_name,
             type=o.TYPE_STRING,
             enum=[i[0] for i in m.Communication.COMMUNICATION_TYPE],
-            description=make_description(m.Communication, 'type', 'COMMUNICATION_TYPE'),
+            description=make_description(
+                m.Communication, 'type', 'COMMUNICATION_TYPE'
+            ),
             nullable=m.Communication.type.field.blank,
         ),
         'value': o.Schema(
@@ -90,8 +110,8 @@ communication = o.Schema(
             type=o.TYPE_STRING,
             example='89992223322',
             nullable=m.Communication.value.field.blank,
-        )
-    }
+        ),
+    },
 )
 
 address = o.Schema(
@@ -207,6 +227,65 @@ job = o.Schema(
     },
 )
 
+spouse_user_schema = o.Schema(
+    title='Create client',
+    type=o.TYPE_OBJECT,
+    properties={
+        'id': o.Schema(
+            type=o.TYPE_STRING, format=o.FORMAT_UUID, read_only=True
+        ),
+        'name': o.Schema(type=o.TYPE_STRING, example='Иван'),
+        'surname': o.Schema(type=o.TYPE_STRING, example='Иванов'),
+        'patronymic': o.Schema(type=o.TYPE_STRING, example='Иванович'),
+        'dob': o.Schema(
+            type=o.TYPE_STRING,
+            format=o.FORMAT_DATETIME,
+            example='2022-07-10T00:00:00.000Z',
+        ),
+        'children': o.Schema(type=o.TYPE_ARRAY, items=child, default=[]),
+        'documentIds': o.Schema(
+            type=o.TYPE_ARRAY, items=document_id, default=[]
+        ),
+        'passport': o.Schema(
+            type=o.TYPE_OBJECT, properties=passport.properties
+        ),
+        'livingAddress': o.Schema(
+            type=o.TYPE_OBJECT, properties=address.properties
+        ),
+        'regAddress': o.Schema(
+            type=o.TYPE_OBJECT, properties=address.properties
+        ),
+        'jobs': o.Schema(type=o.TYPE_ARRAY, items=job, default=[]),
+        'typeEducation': o.Schema(
+            title=m.Client.typeEducation.field.verbose_name,
+            type=o.TYPE_STRING,
+            enum=[i[0] for i in m.Client.EDUCATION_TYPES],
+            description=make_description(
+                m.Client, 'typeEducation', 'EDUCATION_TYPES'
+            ),
+            nullable=m.Client.typeEducation.field.blank,
+        ),
+        'monIncome': o.Schema(
+            title=m.Client.monIncome.field.verbose_name,
+            type=o.TYPE_NUMBER,
+            format=o.FORMAT_DECIMAL,
+            example=55.55,
+            nullable=m.Client.monIncome.field.blank,
+        ),
+        'monExpenses': o.Schema(
+            title=m.Client.monExpenses.field.verbose_name,
+            type=o.TYPE_NUMBER,
+            format=o.FORMAT_DECIMAL,
+            example=55.55,
+            nullable=m.Client.monExpenses.field.blank,
+        ),
+        'communications': o.Schema(
+            type=o.TYPE_ARRAY,
+            items=communication,
+            default=[],
+        ),
+    },
+)
 user_schema = o.Schema(
     title='Create client',
     type=o.TYPE_OBJECT,
@@ -240,7 +319,9 @@ user_schema = o.Schema(
             title=m.Client.typeEducation.field.verbose_name,
             type=o.TYPE_STRING,
             enum=[i[0] for i in m.Client.EDUCATION_TYPES],
-            description=make_description(m.Client, 'typeEducation', 'EDUCATION_TYPES'),
+            description=make_description(
+                m.Client, 'typeEducation', 'EDUCATION_TYPES'
+            ),
             nullable=m.Client.typeEducation.field.blank,
         ),
         'monIncome': o.Schema(
@@ -261,6 +342,10 @@ user_schema = o.Schema(
             type=o.TYPE_ARRAY,
             items=communication,
             default=[],
-        )
+        ),
+        'spouse': o.Schema(
+            type=o.TYPE_OBJECT,
+            properties=spouse_user_schema.properties,
+        ),
     },
 )
