@@ -234,13 +234,13 @@ spouse_user_schema = o.Schema(
         'id': o.Schema(
             type=o.TYPE_STRING, format=o.FORMAT_UUID, read_only=True
         ),
-        'name': o.Schema(type=o.TYPE_STRING, example='Иван'),
-        'surname': o.Schema(type=o.TYPE_STRING, example='Иванов'),
-        'patronymic': o.Schema(type=o.TYPE_STRING, example='Иванович'),
+        'name': o.Schema(type=o.TYPE_STRING, example='Наталья'),
+        'surname': o.Schema(type=o.TYPE_STRING, example='Иванова'),
+        'patronymic': o.Schema(type=o.TYPE_STRING, example='Петровна'),
         'dob': o.Schema(
             type=o.TYPE_STRING,
             format=o.FORMAT_DATETIME,
-            example='2022-07-10T00:00:00.000Z',
+            example='2022-07-12T00:00:00.000Z',
         ),
         'children': o.Schema(type=o.TYPE_ARRAY, items=child, default=[]),
         'documentIds': o.Schema(

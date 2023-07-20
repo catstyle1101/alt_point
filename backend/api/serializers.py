@@ -1,4 +1,3 @@
-from django.conf import settings
 from rest_framework import serializers as s
 
 from clients import models as m
@@ -99,6 +98,22 @@ class BaseClientSerializer(s.ModelSerializer):
         ):
             self._add_m2m_related_object(
                 data, validated_data, key, model, client)
+        if 'spouse' in validated_data:
+            spouse = validated_data['spouse']
+            spouse.spouse_id = client.pk
+            spouse.save()
+        return client
+
+    def update(self, client, validated_data):
+        if 'spouse' in validated_data:
+            spouse = validated_data.pop('spouse')
+            if spouse is None:
+                client.spouse_id = None
+            else:
+                serializer = SpouseClientSerializer(
+                    data=validated_data.pop('spouse'))
+                if serializer.is_valid(raise_exception=True):
+                    validated_data['spouse'] = serializer.save()
         return client
 
 
