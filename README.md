@@ -1,4 +1,4 @@
-# Тестовое задание Atl.Point
+# Тестовое задание Alt.Point
 https://gitlab.com/altpoint-test-cases/back-end
 
 Реализовать CRUD приложения для клиентов, [спецификация](https://gitlab.com/altpoint-test-cases/back-end/-/blob/main/openapi.yaml)
