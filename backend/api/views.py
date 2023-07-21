@@ -75,28 +75,3 @@ class ClientViewset(ModelViewSet):
     @transaction.atomic
     def partial_update(self, request, *args, **kwargs):
         return super().partial_update(request, *args, **kwargs)
-
-    # def partial_update(self, request, *args, **kwargs):
-    # """
-    # Частичное обновление клиента.
-
-    # ---
-    # """
-    # instance = self.get_object()
-    # for key, serializer in (
-    #     ('passport', s.PassportSerializer),
-    #     ('livingAddress', s.AddressSerializer),
-    #     ('regAddress', s.AddressSerializer),
-
-    # ):
-    #     self._change_instance(request, key, serializer, instance)
-    # partial = kwargs.pop('partial', False)
-    # serializer = self.get_serializer(
-    #     instance, data=request.data, partial=partial)
-    # serializer.is_valid(raise_exception=True)
-    # self.perform_update(serializer)
-
-    # if getattr(instance, '_prefetched_objects_cache', None):
-    #     instance._prefetched_objects_cache = {}
-
-    # return Response(serializer.data)

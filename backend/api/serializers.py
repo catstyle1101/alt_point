@@ -76,7 +76,18 @@ class BaseClientSerializer(s.ModelSerializer):
     ):
         if data is None:
             validated_data[key] = None
-        all_instances = [model.objects.create(**i) for i in data]
+        all_instances = list()
+        for item in data:
+            if pk := item.get('id'):
+                try:
+                    instance = model.objects.get(pk=pk)
+                except Exception:
+                    continue
+                for k, v in item.items():
+                    setattr(instance, k, v)
+                    all_instances.append(instance)
+            else:
+                all_instances.append(model.objects.create(**item))
         validated_data[key] = all_instances
         attr = getattr(parent, key)
         attr.set(all_instances)

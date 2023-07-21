@@ -38,7 +38,7 @@ class BasePerson(BaseCreatedAtUpdatedAtModel):
     patronymic = models.CharField(
         'Отчество', max_length=s.MAX_NAME_LENGTH, blank=True, null=True
     )
-    dob = models.DateTimeField('День рождения', blank=True, null=True)
+    dob = models.DateField('День рождения', blank=True, null=True)
 
     class Meta:
         abstract = True
@@ -112,10 +112,10 @@ class Job(BaseCreatedAtUpdatedAtModel):
     type = models.CharField(
         'Тип работы', max_length=20, choices=TYPES, blank=True
     )
-    dateEmp = models.DateTimeField(
+    dateEmp = models.DateField(
         'Дата трудоустройства', blank=True, null=True
     )
-    dateDismissal = models.DateTimeField(
+    dateDismissal = models.DateField(
         'Дата увольнения', blank=True, null=True
     )
     monIncome = models.DecimalField(
@@ -164,12 +164,11 @@ class Passport(BaseCreatedAtUpdatedAtModel):
         validators=(passport_number_validator,),
     )
     giver = models.CharField('Кем выдан', max_length=s.MAX_GIVER_LENGTH)
-    dateIssued = models.DateTimeField('Дата выдачи')
+    dateIssued = models.DateField('Дата выдачи')
 
     class Meta:
         verbose_name = 'Паспорт'
         verbose_name_plural = 'Паспорта'
-        # unique_together = (('series', 'number'),)
 
     def __str__(self):
         return (
@@ -229,9 +228,7 @@ class Client(BasePerson):
     regAddress = models.OneToOneField(
         Address, on_delete=models.SET_NULL, blank=True, null=True
     )
-    jobs = models.ManyToManyField(
-        Job, related_name='emploee', blank=True, null=True
-    )
+    jobs = models.ManyToManyField(Job, related_name='emploee', blank=True)
     typeEducation = models.CharField(
         'Тип образования', choices=EDUCATION_TYPES, max_length=50
     )
@@ -272,7 +269,8 @@ class Client(BasePerson):
 
     def clean(self):
         if self.id == self.spouse_id:
-            raise ValidationError('Нельзя подписаться на самого себя')
+            raise ValidationError("Нельзя подписаться на самого себя")
+
 
     class Meta:
         verbose_name = 'Клиент'
