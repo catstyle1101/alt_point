@@ -1,3 +1,4 @@
+from django_filters.rest_framework import DjangoFilterBackend
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
@@ -6,6 +7,7 @@ from django.db import transaction
 
 from api import serializers as s
 from api import schemas
+from api.filters import ClientFilter
 from api.pagination import ProjectViewPagination
 from clients import models as m
 
@@ -15,6 +17,8 @@ class ClientViewset(ModelViewSet):
     serializer_class = s.ClientSerializer
     pagination_class = ProjectViewPagination
     http_method_names = ['get', 'post', 'head', 'patch', 'delete', 'options']
+    filter_backends = (DjangoFilterBackend,)
+    filterset_class = ClientFilter
 
     @swagger_auto_schema(request_body=schemas.user_schema)
     @transaction.atomic
@@ -52,6 +56,7 @@ class ClientViewset(ModelViewSet):
         """
         return super().retrieve(request, *args, **kwargs)
 
+    @swagger_auto_schema(manual_parameters=schemas.query_params)
     def list(self, request, *args, **kwargs):
         """
         Листинг клиентов.
@@ -74,4 +79,9 @@ class ClientViewset(ModelViewSet):
     @swagger_auto_schema(request_body=schemas.user_schema)
     @transaction.atomic
     def partial_update(self, request, *args, **kwargs):
+        """
+        Частичное обновление клиента
+
+        ---
+        """
         return super().partial_update(request, *args, **kwargs)

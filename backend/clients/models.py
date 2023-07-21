@@ -1,3 +1,4 @@
+import datetime
 import uuid
 
 from django.db import models
@@ -38,7 +39,7 @@ class BasePerson(BaseCreatedAtUpdatedAtModel):
     patronymic = models.CharField(
         'Отчество', max_length=s.MAX_NAME_LENGTH, blank=True, null=True
     )
-    dob = models.DateField('День рождения', blank=True, null=True)
+    dob = models.DateField('День рождения', blank=True, null=True, default=datetime.date.today)
 
     class Meta:
         abstract = True
@@ -113,10 +114,10 @@ class Job(BaseCreatedAtUpdatedAtModel):
         'Тип работы', max_length=20, choices=TYPES, blank=True
     )
     dateEmp = models.DateField(
-        'Дата трудоустройства', blank=True, null=True
+        'Дата трудоустройства', blank=True, null=True, default=datetime.date.today
     )
     dateDismissal = models.DateField(
-        'Дата увольнения', blank=True, null=True
+        'Дата увольнения', blank=True, null=True, default=datetime.date.today,
     )
     monIncome = models.DecimalField(
         'Доход в месяц',
@@ -164,7 +165,7 @@ class Passport(BaseCreatedAtUpdatedAtModel):
         validators=(passport_number_validator,),
     )
     giver = models.CharField('Кем выдан', max_length=s.MAX_GIVER_LENGTH)
-    dateIssued = models.DateField('Дата выдачи')
+    dateIssued = models.DateField('Дата выдачи', default=datetime.date.today)
 
     class Meta:
         verbose_name = 'Паспорт'

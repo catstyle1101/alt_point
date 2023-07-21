@@ -382,3 +382,11 @@ user_schema = o.Schema(
         ),
     },
 )
+
+query_params = [
+    o.Parameter('sortBy', o.IN_QUERY, type=o.TYPE_STRING, description='Поле, по которому нужно отсортировать', default='createdAt'),
+    o.Parameter('sortDir', o.IN_QUERY, type=o.TYPE_STRING, description='Направление сортировки: \nAvailable values : asc, desc', default='asc'),
+    o.Parameter('limit', o.IN_QUERY, type=o.TYPE_INTEGER, description='Количество сущнойстей на странице', default=10),
+    o.Parameter('page', o.IN_QUERY, type=o.TYPE_INTEGER, description='Номер запрашиваемой страницы', default=1),
+    o.Parameter('search', o.IN_QUERY, type=o.TYPE_STRING, description='Строка для поиска по текстовым полям модели по ilike %search%'),
+]
