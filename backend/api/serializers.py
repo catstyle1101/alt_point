@@ -1,46 +1,44 @@
 from django.db import transaction
 from rest_framework import serializers as s
+from rest_framework.utils import model_meta
 
 from clients import models as m
 
 
 class PassportSerializer(s.ModelSerializer):
-
     class Meta:
         model = m.Passport
         fields = '__all__'
 
     def validate(self, attrs):
         if m.Passport.objects.filter(
-            series=attrs.get('series'), number=attrs.get('number')).exists():
+            series=attrs.get('series'), number=attrs.get('number')
+        ).exists():
             raise s.ValidationError(
-                'Паспорт с такой серией и номером уже существует')
+                'Паспорт с такой серией и номером уже существует'
+            )
         return attrs
 
 
 class DocumentsSerializer(s.ModelSerializer):
-
     class Meta:
         model = m.Document
         fields = '__all__'
 
 
 class AddressSerializer(s.ModelSerializer):
-
     class Meta:
         model = m.Address
         fields = '__all__'
 
 
 class CommunicationsSerializer(s.ModelSerializer):
-
     class Meta:
         model = m.Communication
         fields = '__all__'
 
 
 class ChildrenSerializer(s.ModelSerializer):
-
     class Meta:
         model = m.Child
         fields = '__all__'
@@ -67,14 +65,17 @@ class BaseClientSerializer(s.ModelSerializer):
     class Meta:
         abstract = True
 
-    def _add_fk_related_object(
-            self, validated_data, key, model):
-        if value := validated_data.pop(key):
+    def _add_fk_related_object(self, validated_data, key, model):
+        if validated_data is None:
+            validated_data[key] = None
+        elif value := validated_data.pop(key):
             validated_data[key] = model.objects.create(**value)
 
-    def _add_m2m_related_object(self, data, validated_data, key, model, parent):
+    def _add_m2m_related_object(
+        self, data, validated_data, key, model, parent
+    ):
         if data is None:
-            return
+            validated_data[key] = None
         all_instances = [model.objects.create(**i) for i in data]
         validated_data[key] = all_instances
         attr = getattr(parent, key)
@@ -84,7 +85,8 @@ class BaseClientSerializer(s.ModelSerializer):
         with transaction.atomic():
             if 'spouse' in validated_data:
                 serializer = SpouseClientSerializer(
-                    data=validated_data.pop('spouse'))
+                    data=validated_data.pop('spouse')
+                )
                 if serializer.is_valid(raise_exception=True):
                     obj = serializer.save()
                     validated_data['spouse'] = obj
@@ -107,33 +109,95 @@ class BaseClientSerializer(s.ModelSerializer):
             ('documentIds', documents, m.Document),
         ):
             self._add_m2m_related_object(
-                data, validated_data, key, model, client)
+                data, validated_data, key, model, client
+            )
         if 'spouse' in validated_data:
             spouse = validated_data['spouse']
             spouse.spouse_id = client.pk
             if (
-                client.passport.series == spouse.passport.series and
-                client.passport.number == spouse.passport.number
+                client.passport.series == spouse.passport.series
+                and client.passport.number == spouse.passport.number
             ):
                 raise s.ValidationError('Серия и номер паспортов одинаковые')
             spouse.save()
         return client
 
+    def _update_instance(self, validated_data, key, model):
+        if key in validated_data:
+            nested_serializer = self.fields[key]
+            nested_instance = getattr(model, key)
+            nested_data = validated_data.pop(key)
+            if nested_data is None:
+                setattr(model, key, None)
+            else:
+                nested_serializer.update(nested_instance, nested_data)
+
     def update(self, client, validated_data):
         if 'spouse' in validated_data:
-            spouse = validated_data.pop('spouse')
-            if spouse is None:
-                client.spouse_id = None
+            data = validated_data.pop('spouse')
+            if data is None:
+                client.spouse = data
             else:
-                serializer = SpouseClientSerializer(
-                    data=validated_data.pop('spouse'))
+                serializer = SpouseClientSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
-                    validated_data['spouse'] = serializer.save()
+                    obj = serializer.save()
+                    validated_data['spouse'] = obj
+        rel_fields = {
+            'jobs': m.Job,
+            'communications': m.Communication,
+            'children': m.Child,
+            'passport': m.Passport,
+            'livingAddress': m.Address,
+            'regAddress': m.Address,
+            'documentIds': m.Address,
+            'spouse': m.Client,
+        }
+        fields = [i for i in validated_data]
+        for field in fields:
+            model = rel_fields.get(field)
+            f = validated_data.get(field)
+            if isinstance(f, dict):
+                if pk := self.initial_data.get(field).get('id'):
+                    try:
+                        instance = model.objects.get(pk=pk)
+                    except Exception as e:
+                        raise s.ValidationError(
+                            f'field {field} with {pk} does not exist.'
+                        )
+                    serializer = self.fields[field]
+                    data = validated_data.pop(field)
+                    if data is None:
+                        setattr(client, field, None)
+                    else:
+                        serializer.update(instance, data)
+                        validated_data[field] = serializer
+                else:
+                    self._add_fk_related_object(validated_data, field, model)
+            elif isinstance(f, list):
+                self._add_m2m_related_object(
+                    validated_data.pop(field),
+                    validated_data,
+                    field,
+                    model,
+                    client,
+                )
+
+        info = model_meta.get_field_info(client)
+        m2m_fields = []
+        for attr, value in validated_data.items():
+            if attr in info.relations and info.relations[attr].to_many:
+                m2m_fields.append((attr, value))
+            else:
+                setattr(client, attr, value)
+        client.save()
+        for attr, value in m2m_fields:
+            field = getattr(client, attr)
+            field.set(value)
+
         return client
 
 
 class SpouseClientSerializer(BaseClientSerializer):
-
     class Meta:
         model = m.Client
         exclude = ('spouse',)

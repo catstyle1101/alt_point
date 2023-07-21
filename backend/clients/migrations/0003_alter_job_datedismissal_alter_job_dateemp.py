@@ -6,18 +6,25 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('clients', '0002_alter_address_options_alter_communication_options_and_more'),
+        (
+            'clients',
+            '0002_alter_address_options_alter_communication_options_and_more',
+        ),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='job',
             name='dateDismissal',
-            field=models.DateField(blank=True, null=True, verbose_name='Дата увольнения'),
+            field=models.DateField(
+                blank=True, null=True, verbose_name='Дата увольнения'
+            ),
         ),
         migrations.AlterField(
             model_name='job',
             name='dateEmp',
-            field=models.DateField(blank=True, null=True, verbose_name='Дата трудоустройства'),
+            field=models.DateField(
+                blank=True, null=True, verbose_name='Дата трудоустройства'
+            ),
         ),
     ]

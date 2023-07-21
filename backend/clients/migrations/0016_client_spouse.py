@@ -14,6 +14,12 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='client',
             name='spouse',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='clients.client', verbose_name='Супруг(а)'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='clients.client',
+                verbose_name='Супруг(а)',
+            ),
         ),
     ]

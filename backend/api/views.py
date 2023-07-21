@@ -74,26 +74,29 @@ class ClientViewset(ModelViewSet):
     @swagger_auto_schema(request_body=schemas.user_schema)
     @transaction.atomic
     def partial_update(self, request, *args, **kwargs):
-        """
-        Частичное обновление клиента.
+        return super().partial_update(request, *args, **kwargs)
 
-        ---
-        """
-        instance = self.get_object()
-        for key, serializer in (
-            ('passport', s.PassportSerializer),
-            ('livingAddress', s.AddressSerializer),
-            ('regAddress', s.AddressSerializer),
+    # def partial_update(self, request, *args, **kwargs):
+    # """
+    # Частичное обновление клиента.
 
-        ):
-            self._change_instance(request, key, serializer, instance)
-        partial = kwargs.pop('partial', False)
-        serializer = self.get_serializer(
-            instance, data=request.data, partial=partial)
-        serializer.is_valid(raise_exception=True)
-        self.perform_update(serializer)
+    # ---
+    # """
+    # instance = self.get_object()
+    # for key, serializer in (
+    #     ('passport', s.PassportSerializer),
+    #     ('livingAddress', s.AddressSerializer),
+    #     ('regAddress', s.AddressSerializer),
 
-        if getattr(instance, '_prefetched_objects_cache', None):
-            instance._prefetched_objects_cache = {}
+    # ):
+    #     self._change_instance(request, key, serializer, instance)
+    # partial = kwargs.pop('partial', False)
+    # serializer = self.get_serializer(
+    #     instance, data=request.data, partial=partial)
+    # serializer.is_valid(raise_exception=True)
+    # self.perform_update(serializer)
 
-        return Response(serializer.data)
+    # if getattr(instance, '_prefetched_objects_cache', None):
+    #     instance._prefetched_objects_cache = {}
+
+    # return Response(serializer.data)

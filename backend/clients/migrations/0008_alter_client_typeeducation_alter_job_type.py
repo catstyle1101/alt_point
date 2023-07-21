@@ -13,11 +13,30 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='client',
             name='typeEducation',
-            field=models.CharField(choices=[('secondary', 'Среднее'), ('secondarySpecial', 'Среднее специальное'), ('incompleteHigher', 'Незаконченное высшее'), ('higher', 'Высшее'), ('twoOrMoreHigher', 'Два и более высших образований'), ('academicDegree', 'Академическая степень')], max_length=50, verbose_name='Тип образования'),
+            field=models.CharField(
+                choices=[
+                    ('secondary', 'Среднее'),
+                    ('secondarySpecial', 'Среднее специальное'),
+                    ('incompleteHigher', 'Незаконченное высшее'),
+                    ('higher', 'Высшее'),
+                    ('twoOrMoreHigher', 'Два и более высших образований'),
+                    ('academicDegree', 'Академическая степень'),
+                ],
+                max_length=50,
+                verbose_name='Тип образования',
+            ),
         ),
         migrations.AlterField(
             model_name='job',
             name='type',
-            field=models.CharField(blank=True, choices=[('main', 'Основная работа'), ('part_time', 'Частичная занятость')], max_length=20, verbose_name='Тип работы'),
+            field=models.CharField(
+                blank=True,
+                choices=[
+                    ('main', 'Основная работа'),
+                    ('part_time', 'Частичная занятость'),
+                ],
+                max_length=20,
+                verbose_name='Тип работы',
+            ),
         ),
     ]

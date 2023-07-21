@@ -8,9 +8,7 @@ def passport_series_validator(series: str):
             f'Длина серии паспорта должна быть {s.MAX_SERIES_LENGTH}.'
         )
     if not series.isdigit():
-        raise ValidationError(
-            'Серия паспорта может быть только числом.'
-        )
+        raise ValidationError('Серия паспорта может быть только числом.')
 
 
 def passport_number_validator(number: str):
@@ -19,9 +17,7 @@ def passport_number_validator(number: str):
             f'Длина серии паспорта должна быть {s.MAX_PASSPORT_NUMBER_LENGTH}.'
         )
     if not number.isdigit():
-        raise ValidationError(
-            'Серия паспорта может быть только числом.'
-        )
+        raise ValidationError('Серия паспорта может быть только числом.')
 
 
 def tin_validator(number: str):
@@ -33,7 +29,8 @@ def tin_validator(number: str):
     d1 = str(sum(w * int(n) for w, n in zip(weights, number)) % 11 % 10)
     weights = (3, 7, 2, 4, 10, 3, 5, 9, 4, 6, 8)
     d2 = str(
-        sum(w * int(n) for w, n in zip(weights, number[:10] + d1)) % 11 % 10)
+        sum(w * int(n) for w, n in zip(weights, number[:10] + d1)) % 11 % 10
+    )
     if (d1 + d2) != number[-2:]:
         raise ValidationError('Введен некорректный ИНН.')
 

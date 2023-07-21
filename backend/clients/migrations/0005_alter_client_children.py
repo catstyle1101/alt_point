@@ -14,6 +14,13 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='client',
             name='children',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='parent', to='clients.child', verbose_name='Дети'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='parent',
+                to='clients.child',
+                verbose_name='Дети',
+            ),
         ),
     ]

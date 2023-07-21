@@ -27,17 +27,27 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='client',
             name='documentIds',
-            field=models.ManyToManyField(blank=True, null=True, related_name='client', to='clients.document', verbose_name='Идентификаторы документов'),
+            field=models.ManyToManyField(
+                blank=True,
+                null=True,
+                related_name='client',
+                to='clients.document',
+                verbose_name='Идентификаторы документов',
+            ),
         ),
         migrations.AlterField(
             model_name='job',
             name='dateDismissal',
-            field=models.DateTimeField(blank=True, null=True, verbose_name='Дата увольнения'),
+            field=models.DateTimeField(
+                blank=True, null=True, verbose_name='Дата увольнения'
+            ),
         ),
         migrations.AlterField(
             model_name='job',
             name='dateEmp',
-            field=models.DateTimeField(blank=True, null=True, verbose_name='Дата трудоустройства'),
+            field=models.DateTimeField(
+                blank=True, null=True, verbose_name='Дата трудоустройства'
+            ),
         ),
         migrations.AlterField(
             model_name='passport',

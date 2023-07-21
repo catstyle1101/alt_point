@@ -6,18 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('clients', '0012_alter_client_livingaddress_alter_client_passport_and_more'),
+        (
+            'clients',
+            '0012_alter_client_livingaddress_alter_client_passport_and_more',
+        ),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='client',
             name='communications',
-            field=models.ManyToManyField(blank=True, related_name='client', to='clients.communication'),
+            field=models.ManyToManyField(
+                blank=True, related_name='client', to='clients.communication'
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='documentIds',
-            field=models.ManyToManyField(blank=True, related_name='client', to='clients.document', verbose_name='Идентификаторы документов'),
+            field=models.ManyToManyField(
+                blank=True,
+                related_name='client',
+                to='clients.document',
+                verbose_name='Идентификаторы документов',
+            ),
         ),
     ]

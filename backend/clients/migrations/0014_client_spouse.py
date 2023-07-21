@@ -7,13 +7,21 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('clients', '0013_alter_client_communications_alter_client_documentids'),
+        (
+            'clients',
+            '0013_alter_client_communications_alter_client_documentids',
+        ),
     ]
 
     operations = [
         migrations.AddField(
             model_name='client',
             name='spouse',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='clients.client'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='clients.client',
+            ),
         ),
     ]

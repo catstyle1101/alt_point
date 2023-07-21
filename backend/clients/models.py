@@ -169,7 +169,7 @@ class Passport(BaseCreatedAtUpdatedAtModel):
     class Meta:
         verbose_name = 'Паспорт'
         verbose_name_plural = 'Паспорта'
-        unique_together = (('series', 'number'),)
+        # unique_together = (('series', 'number'),)
 
     def __str__(self):
         return (
@@ -229,7 +229,9 @@ class Client(BasePerson):
     regAddress = models.OneToOneField(
         Address, on_delete=models.SET_NULL, blank=True, null=True
     )
-    jobs = models.ManyToManyField(Job, related_name='emploee')
+    jobs = models.ManyToManyField(
+        Job, related_name='emploee', blank=True, null=True
+    )
     typeEducation = models.CharField(
         'Тип образования', choices=EDUCATION_TYPES, max_length=50
     )
@@ -270,8 +272,7 @@ class Client(BasePerson):
 
     def clean(self):
         if self.id == self.spouse_id:
-            raise ValidationError("Нельзя подписаться на самого себя")
-
+            raise ValidationError('Нельзя подписаться на самого себя')
 
     class Meta:
         verbose_name = 'Клиент'

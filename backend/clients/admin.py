@@ -13,7 +13,13 @@ class ClientAdmin(admin.ModelAdmin):
 @admin.register(m.Address)
 class AddressAdmin(admin.ModelAdmin):
     list_display = (
-        'zipCode', 'country', 'city', 'street', 'house', 'apartment')
+        'zipCode',
+        'country',
+        'city',
+        'street',
+        'house',
+        'apartment',
+    )
     list_filter = ('country', 'city')
 
 

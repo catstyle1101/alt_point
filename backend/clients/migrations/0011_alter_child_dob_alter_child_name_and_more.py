@@ -14,66 +14,109 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='child',
             name='dob',
-            field=models.DateTimeField(blank=True, null=True, verbose_name='День рождения'),
+            field=models.DateTimeField(
+                blank=True, null=True, verbose_name='День рождения'
+            ),
         ),
         migrations.AlterField(
             model_name='child',
             name='name',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Имя'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Имя'
+            ),
         ),
         migrations.AlterField(
             model_name='child',
             name='patronymic',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Отчество'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Отчество'
+            ),
         ),
         migrations.AlterField(
             model_name='child',
             name='surname',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Фамилия'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Фамилия'
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='communications',
-            field=models.ManyToManyField(blank=True, null=True, related_name='client', to='clients.communication'),
+            field=models.ManyToManyField(
+                blank=True,
+                null=True,
+                related_name='client',
+                to='clients.communication',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='dob',
-            field=models.DateTimeField(blank=True, null=True, verbose_name='День рождения'),
+            field=models.DateTimeField(
+                blank=True, null=True, verbose_name='День рождения'
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='livingAddress',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='living_person', to='clients.address'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='living_person',
+                to='clients.address',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='monExpenses',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True, verbose_name='Суммарный расход в месяц'),
+            field=models.DecimalField(
+                blank=True,
+                decimal_places=2,
+                max_digits=10,
+                null=True,
+                verbose_name='Суммарный расход в месяц',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='name',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Имя'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Имя'
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='passport',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='clients.passport'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to='clients.passport',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='patronymic',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Отчество'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Отчество'
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='regAddress',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='clients.address'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to='clients.address',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='surname',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Фамилия'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='Фамилия'
+            ),
         ),
     ]

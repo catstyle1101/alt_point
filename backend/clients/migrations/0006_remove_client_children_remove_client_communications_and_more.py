@@ -29,21 +29,35 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='client',
             name='children',
-            field=models.ManyToManyField(blank=True, null=True, related_name='parent', to='clients.child', verbose_name='Дети'),
+            field=models.ManyToManyField(
+                blank=True,
+                null=True,
+                related_name='parent',
+                to='clients.child',
+                verbose_name='Дети',
+            ),
         ),
         migrations.AddField(
             model_name='client',
             name='communications',
-            field=models.ManyToManyField(related_name='client', to='clients.communication'),
+            field=models.ManyToManyField(
+                related_name='client', to='clients.communication'
+            ),
         ),
         migrations.AddField(
             model_name='client',
             name='documentIds',
-            field=models.ManyToManyField(related_name='client', to='clients.document', verbose_name='Идентификаторы документов'),
+            field=models.ManyToManyField(
+                related_name='client',
+                to='clients.document',
+                verbose_name='Идентификаторы документов',
+            ),
         ),
         migrations.AddField(
             model_name='client',
             name='jobs',
-            field=models.ManyToManyField(related_name='emploee', to='clients.job'),
+            field=models.ManyToManyField(
+                related_name='emploee', to='clients.job'
+            ),
         ),
     ]

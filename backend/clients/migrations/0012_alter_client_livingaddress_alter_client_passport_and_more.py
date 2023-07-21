@@ -14,16 +14,32 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='client',
             name='livingAddress',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='living_person', to='clients.address'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='living_person',
+                to='clients.address',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='passport',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='clients.passport'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='clients.passport',
+            ),
         ),
         migrations.AlterField(
             model_name='client',
             name='regAddress',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='clients.address'),
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='clients.address',
+            ),
         ),
     ]

@@ -17,24 +17,42 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterModelOptions(
             name='communication',
-            options={'verbose_name': 'Средство связи', 'verbose_name_plural': 'Средства связи'},
+            options={
+                'verbose_name': 'Средство связи',
+                'verbose_name_plural': 'Средства связи',
+            },
         ),
         migrations.AlterModelOptions(
             name='document',
-            options={'verbose_name': 'Документ', 'verbose_name_plural': 'Документы'},
+            options={
+                'verbose_name': 'Документ',
+                'verbose_name_plural': 'Документы',
+            },
         ),
         migrations.AlterModelOptions(
             name='job',
-            options={'verbose_name': 'Работа', 'verbose_name_plural': 'Работы'},
+            options={
+                'verbose_name': 'Работа',
+                'verbose_name_plural': 'Работы',
+            },
         ),
         migrations.AlterField(
             model_name='address',
             name='apartment',
-            field=models.CharField(blank=True, max_length=20, null=True, verbose_name='Номер квартиры, офиса и т.д.'),
+            field=models.CharField(
+                blank=True,
+                max_length=20,
+                null=True,
+                verbose_name='Номер квартиры, офиса и т.д.',
+            ),
         ),
         migrations.AlterField(
             model_name='address',
             name='zipCode',
-            field=models.CharField(max_length=6, validators=[clients.validators.zip_code_validator], verbose_name='Почтовый индекс'),
+            field=models.CharField(
+                max_length=6,
+                validators=[clients.validators.zip_code_validator],
+                verbose_name='Почтовый индекс',
+            ),
         ),
     ]
