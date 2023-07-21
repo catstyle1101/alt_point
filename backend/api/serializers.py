@@ -1,3 +1,4 @@
+from django.db import transaction
 from rest_framework import serializers as s
 
 from clients import models as m
@@ -8,6 +9,13 @@ class PassportSerializer(s.ModelSerializer):
     class Meta:
         model = m.Passport
         fields = '__all__'
+
+    def validate(self, attrs):
+        if m.Passport.objects.filter(
+            series=attrs.get('series'), number=attrs.get('number')).exists():
+            raise s.ValidationError(
+                'Паспорт с такой серией и номером уже существует')
+        return attrs
 
 
 class DocumentsSerializer(s.ModelSerializer):
@@ -73,11 +81,13 @@ class BaseClientSerializer(s.ModelSerializer):
         attr.set(all_instances)
 
     def create(self, validated_data):
-        if 'spouse' in validated_data:
-            serializer = SpouseClientSerializer(
-                data=validated_data.pop('spouse'))
-            if serializer.is_valid(raise_exception=True):
-                validated_data['spouse'] = serializer.save()
+        with transaction.atomic():
+            if 'spouse' in validated_data:
+                serializer = SpouseClientSerializer(
+                    data=validated_data.pop('spouse'))
+                if serializer.is_valid(raise_exception=True):
+                    obj = serializer.save()
+                    validated_data['spouse'] = obj
         for key, model in (
             ('passport', m.Passport),
             ('livingAddress', m.Address),
@@ -101,6 +111,11 @@ class BaseClientSerializer(s.ModelSerializer):
         if 'spouse' in validated_data:
             spouse = validated_data['spouse']
             spouse.spouse_id = client.pk
+            if (
+                client.passport.series == spouse.passport.series and
+                client.passport.number == spouse.passport.number
+            ):
+                raise s.ValidationError('Серия и номер паспортов одинаковые')
             spouse.save()
         return client
 

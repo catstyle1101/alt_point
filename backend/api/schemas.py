@@ -89,6 +89,39 @@ passport = o.Schema(
         ),
     },
 )
+passport_spouse = o.Schema(
+    title='Passport',
+    type=o.TYPE_OBJECT,
+    properties={
+        'id': o.Schema(
+            type=o.TYPE_STRING, format=o.FORMAT_UUID, read_only=True
+        ),
+        'series': o.Schema(
+            title=m.Passport.series.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='7400',
+            nullable=m.Passport.series.field.blank,
+        ),
+        'number': o.Schema(
+            title=m.Passport.number.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='654321',
+            nullable=m.Passport.number.field.blank,
+        ),
+        'giver': o.Schema(
+            title=m.Passport.giver.field.verbose_name,
+            type=o.TYPE_STRING,
+            example='ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска',
+            nullable=m.Passport.giver.field.blank,
+        ),
+        'dateIssued': o.Schema(
+            title=m.Passport.dateIssued.field.verbose_name,
+            type=o.FORMAT_DATETIME,
+            example='2022-07-11T00:00:00.000Z',
+            nullable=m.Passport.dateIssued.field.blank,
+        ),
+    },
+)
 communication = o.Schema(
     title=m.Communication._meta.verbose_name,
     type=o.TYPE_OBJECT,
@@ -247,7 +280,7 @@ spouse_user_schema = o.Schema(
             type=o.TYPE_ARRAY, items=document_id, default=[]
         ),
         'passport': o.Schema(
-            type=o.TYPE_OBJECT, properties=passport.properties
+            type=o.TYPE_OBJECT, properties=passport_spouse.properties
         ),
         'livingAddress': o.Schema(
             type=o.TYPE_OBJECT, properties=address.properties

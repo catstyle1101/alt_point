@@ -741,6 +741,565 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-07-21T04:02:56.368Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0443\\u043f\\u0440\\u0443\\u0433(\\u0430)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-07-21T04:03:55.408Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-07-21T04:04:02.359Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0443\\u043f\\u0440\\u0443\\u0433(\\u0430)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-07-21T04:04:09.393Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0443\\u043f\\u0440\\u0443\\u0433(\\u0430)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-07-21T04:04:29.134Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0443\\u043f\\u0440\\u0443\\u0433(\\u0430)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-07-21T04:05:05.465Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-07-21T04:05:25.925Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-07-21T04:05:33.421Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
+    "object_repr": "Клиент: Иван Иванов",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-07-21T04:05:55.806Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "0261239f-eae7-4d1d-a70e-f078c9dee6da",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2023-07-21T04:06:05.527Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2a990e38-25b3-490b-8152-962a73e02178",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2023-07-21T04:06:12.424Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "292122de-fd4f-45d0-bc79-4d4d3ed4b847",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2023-07-21T04:06:17.360Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "e4f1ffa2-fd08-4f5b-95f1-3438f800ef42",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2023-07-21T04:06:21.334Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "f79232ba-d57f-477e-92e8-3165d6b08031",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2023-07-21T04:06:25.811Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "f7542ba7-1d7d-4325-a14e-6399b14ab3b5",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2023-07-21T04:07:44.567Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "e7088d2a-a46b-4534-b5f9-e3516d0d0fd8",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2023-07-21T04:10:10.011Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "e5a69c25-6ac4-4c72-9ae3-5019a0712aee",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2023-07-21T04:10:14.344Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "e450e5b3-4528-4a8f-bb68-d1f00a084b61",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2023-07-21T04:10:18.515Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "e2adb74a-ba97-4b8a-8dee-4fe424b3ae87",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2023-07-21T04:10:23.553Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "a8b0f6b5-8cf4-4400-ab6b-87361077a0f7",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2023-07-21T04:10:27.085Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "938c350f-7a67-4a22-b51a-ee0caced921d",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2023-07-21T04:10:31.526Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "77b1bd8a-4526-4519-b937-be8241d0a74f",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2023-07-21T04:10:35.467Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "72a35afa-0396-43e5-906b-1a76bf932239",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2023-07-21T04:10:38.893Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "72374c63-eca6-4ee3-ada5-b1ec61fefb74",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2023-07-21T04:10:42.384Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5b2044e2-72ca-47d2-b01b-4b3e44ffcb19",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2023-07-21T04:10:46.124Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "59cc6fdc-cec2-4482-8748-9fa46bc9b55b",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2023-07-21T04:10:49.635Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "56a21d0e-ef00-4a40-b914-978a939dc4eb",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2023-07-21T04:10:52.824Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "517bb634-01a1-459b-8166-dc5d659d56b4",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2023-07-21T04:11:00.987Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "440a60c9-160b-4f59-9dd1-f65d643f8d14",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2023-07-21T04:11:04.305Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "40609acf-7ab1-4e3e-b3ce-94b54ba00c9e",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2023-07-21T04:11:08.311Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3d17cd5c-bff1-429d-bdae-e41c8ecbd085",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2023-07-21T04:11:12.928Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2dea0fc2-b290-47fd-81d7-815500612e8d",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2023-07-21T04:11:23.053Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2900a717-c0e6-4b03-9198-2fe94fa69fed",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2023-07-21T04:11:28.218Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "bfce4df7-6cde-43a3-8e8d-afed164dcb4c",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2023-07-21T04:11:36.375Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
+    "object_repr": "Паспорт 8855 654544, Выдан ОВД Калиниского района г. Челябинска, Дата выдачи: 2022-12-07 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2023-07-21T04:12:03.001Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6f628498-8ee0-455c-9238-4a8039864efb",
+    "object_repr": "Клиент: Петр Петров",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Passport\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2023-07-21T04:12:33.763Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2d6cc763-5fe9-4ef4-a67c-6c1a6fc47f29",
+    "object_repr": "Паспорт 0000 000000, Выдан ОВД Улан-Удэ, Дата выдачи: 2023-02-08 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2023-07-21T04:12:38.008Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "26d5ed6c-ef28-42ff-be21-93fa2ff113d7",
+    "object_repr": "Паспорт 7474 123456, Выдан ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска, Дата выдачи: 2022-07-10 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2023-07-21T04:12:46.402Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "01b4fc6f-3c5c-44d4-bcb1-85e48dc28235",
+    "object_repr": "Ванечка None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2023-07-21T04:12:49.825Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10f3e430-17cc-4241-869d-9c6bf9fb3aae",
+    "object_repr": "Петька None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2023-07-21T04:12:53.196Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "44a7cc47-77ab-43bb-a5b9-bfda537251a2",
+    "object_repr": "Петька None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2023-07-21T04:12:57.974Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45dc553e-856f-498e-9b23-ec8ff2a0dc3f",
+    "object_repr": "Петр Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2023-07-21T04:13:01.258Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "c3b37e29-3c9a-4f8d-b0b6-0c4288d1879b",
+    "object_repr": "Коленька Иванов",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2023-07-21T04:13:18.935Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "d137314f-a756-4c49-870f-fb91e435ff1c",
+    "object_repr": "email -> user_3@email.ru",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
@@ -1653,14 +2212,6 @@
   }
 },
 {
-  "model": "clients.communication",
-  "pk": "d137314f-a756-4c49-870f-fb91e435ff1c",
-  "fields": {
-    "type": "email",
-    "value": "user_3@email.ru"
-  }
-},
-{
   "model": "clients.job",
   "pk": "1cd0c379-429e-41e5-9729-4be8d05f6298",
   "fields": {
@@ -1710,246 +2261,6 @@
 },
 {
   "model": "clients.passport",
-  "pk": "0261239f-eae7-4d1d-a70e-f078c9dee6da",
-  "fields": {
-    "createdAt": "2023-07-20T12:30:33.234Z",
-    "updatedAt": "2023-07-20T12:30:33.235Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "26d5ed6c-ef28-42ff-be21-93fa2ff113d7",
-  "fields": {
-    "createdAt": "2023-07-20T12:51:39.659Z",
-    "updatedAt": "2023-07-20T12:51:39.659Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "2900a717-c0e6-4b03-9198-2fe94fa69fed",
-  "fields": {
-    "createdAt": "2023-07-20T10:23:36.767Z",
-    "updatedAt": "2023-07-20T10:23:36.767Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "292122de-fd4f-45d0-bc79-4d4d3ed4b847",
-  "fields": {
-    "createdAt": "2023-07-20T12:51:39.675Z",
-    "updatedAt": "2023-07-20T12:51:39.675Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "2a990e38-25b3-490b-8152-962a73e02178",
-  "fields": {
-    "createdAt": "2023-07-20T11:46:54.587Z",
-    "updatedAt": "2023-07-20T11:46:54.587Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "2d6cc763-5fe9-4ef4-a67c-6c1a6fc47f29",
-  "fields": {
-    "createdAt": "2023-07-18T09:20:24.221Z",
-    "updatedAt": "2023-07-18T09:20:24.221Z",
-    "series": "0000",
-    "number": "000000",
-    "giver": "ОВД Улан-Удэ",
-    "dateIssued": "2023-02-08T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "2dea0fc2-b290-47fd-81d7-815500612e8d",
-  "fields": {
-    "createdAt": "2023-07-20T12:30:33.162Z",
-    "updatedAt": "2023-07-20T12:30:33.162Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "3d17cd5c-bff1-429d-bdae-e41c8ecbd085",
-  "fields": {
-    "createdAt": "2023-07-20T12:37:31.228Z",
-    "updatedAt": "2023-07-20T12:37:31.228Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "40609acf-7ab1-4e3e-b3ce-94b54ba00c9e",
-  "fields": {
-    "createdAt": "2023-07-20T12:00:00.367Z",
-    "updatedAt": "2023-07-20T12:00:00.367Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "440a60c9-160b-4f59-9dd1-f65d643f8d14",
-  "fields": {
-    "createdAt": "2023-07-20T11:42:57.569Z",
-    "updatedAt": "2023-07-20T11:42:57.571Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "517bb634-01a1-459b-8166-dc5d659d56b4",
-  "fields": {
-    "createdAt": "2023-07-20T11:08:08.552Z",
-    "updatedAt": "2023-07-20T11:08:08.552Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "56a21d0e-ef00-4a40-b914-978a939dc4eb",
-  "fields": {
-    "createdAt": "2023-07-20T09:43:00.628Z",
-    "updatedAt": "2023-07-20T09:43:00.628Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "59cc6fdc-cec2-4482-8748-9fa46bc9b55b",
-  "fields": {
-    "createdAt": "2023-07-20T12:37:31.195Z",
-    "updatedAt": "2023-07-20T12:37:31.195Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "5b2044e2-72ca-47d2-b01b-4b3e44ffcb19",
-  "fields": {
-    "createdAt": "2023-07-20T11:43:51.526Z",
-    "updatedAt": "2023-07-20T11:43:51.526Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "72374c63-eca6-4ee3-ada5-b1ec61fefb74",
-  "fields": {
-    "createdAt": "2023-07-20T11:58:46.053Z",
-    "updatedAt": "2023-07-20T11:58:46.069Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "72a35afa-0396-43e5-906b-1a76bf932239",
-  "fields": {
-    "createdAt": "2023-07-20T09:47:51.841Z",
-    "updatedAt": "2023-07-20T09:47:51.856Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "77b1bd8a-4526-4519-b937-be8241d0a74f",
-  "fields": {
-    "createdAt": "2023-07-20T10:55:39.292Z",
-    "updatedAt": "2023-07-20T10:55:39.293Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "938c350f-7a67-4a22-b51a-ee0caced921d",
-  "fields": {
-    "createdAt": "2023-07-20T11:46:54.548Z",
-    "updatedAt": "2023-07-20T11:46:54.548Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "a8b0f6b5-8cf4-4400-ab6b-87361077a0f7",
-  "fields": {
-    "createdAt": "2023-07-20T11:46:45.495Z",
-    "updatedAt": "2023-07-20T11:46:45.495Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
-  "fields": {
-    "createdAt": "2023-07-18T09:17:41.344Z",
-    "updatedAt": "2023-07-18T09:17:41.344Z",
-    "series": "8855",
-    "number": "654544",
-    "giver": "ОВД Калиниского района г. Челябинска",
-    "dateIssued": "2022-12-07T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
   "pk": "b97a9846-86eb-49f5-8d96-024bce5a6070",
   "fields": {
     "createdAt": "2023-07-18T09:20:07.876Z",
@@ -1958,18 +2269,6 @@
     "number": "654654",
     "giver": "ОВД г. Москвы",
     "dateIssued": "2023-01-09T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "bfce4df7-6cde-43a3-8e8d-afed164dcb4c",
-  "fields": {
-    "createdAt": "2023-07-20T12:36:14.548Z",
-    "updatedAt": "2023-07-20T12:36:14.548Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
   }
 },
 {
@@ -1985,160 +2284,16 @@
   }
 },
 {
-  "model": "clients.passport",
-  "pk": "e2adb74a-ba97-4b8a-8dee-4fe424b3ae87",
-  "fields": {
-    "createdAt": "2023-07-20T12:00:00.409Z",
-    "updatedAt": "2023-07-20T12:00:00.409Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "e450e5b3-4528-4a8f-bb68-d1f00a084b61",
-  "fields": {
-    "createdAt": "2023-07-20T09:49:04.451Z",
-    "updatedAt": "2023-07-20T09:49:04.451Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "e4f1ffa2-fd08-4f5b-95f1-3438f800ef42",
-  "fields": {
-    "createdAt": "2023-07-20T10:22:38.436Z",
-    "updatedAt": "2023-07-20T10:22:38.436Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "e5a69c25-6ac4-4c72-9ae3-5019a0712aee",
-  "fields": {
-    "createdAt": "2023-07-20T09:46:52.991Z",
-    "updatedAt": "2023-07-20T09:46:53.005Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "e7088d2a-a46b-4534-b5f9-e3516d0d0fd8",
-  "fields": {
-    "createdAt": "2023-07-20T12:36:14.534Z",
-    "updatedAt": "2023-07-20T12:36:14.534Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "f7542ba7-1d7d-4325-a14e-6399b14ab3b5",
-  "fields": {
-    "createdAt": "2023-07-20T11:58:46.105Z",
-    "updatedAt": "2023-07-20T11:58:46.105Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну г.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.passport",
-  "pk": "f79232ba-d57f-477e-92e8-3165d6b08031",
-  "fields": {
-    "createdAt": "2023-07-20T09:50:53.717Z",
-    "updatedAt": "2023-07-20T09:50:53.723Z",
-    "series": "7474",
-    "number": "123456",
-    "giver": "ОУФМ Челябинской обл. по Центральному р-ну гор.Челябинска",
-    "dateIssued": "2022-07-10T00:00:00Z"
-  }
-},
-{
-  "model": "clients.child",
-  "pk": "01b4fc6f-3c5c-44d4-bcb1-85e48dc28235",
-  "fields": {
-    "createdAt": "2023-07-20T10:55:39.295Z",
-    "updatedAt": "2023-07-20T10:55:39.295Z",
-    "name": "Ванечка",
-    "surname": null,
-    "patronymic": null,
-    "dob": null
-  }
-},
-{
-  "model": "clients.child",
-  "pk": "10f3e430-17cc-4241-869d-9c6bf9fb3aae",
-  "fields": {
-    "createdAt": "2023-07-20T10:22:38.452Z",
-    "updatedAt": "2023-07-20T10:22:38.452Z",
-    "name": "Петька",
-    "surname": null,
-    "patronymic": null,
-    "dob": null
-  }
-},
-{
-  "model": "clients.child",
-  "pk": "44a7cc47-77ab-43bb-a5b9-bfda537251a2",
-  "fields": {
-    "createdAt": "2023-07-20T10:23:36.783Z",
-    "updatedAt": "2023-07-20T10:23:36.783Z",
-    "name": "Петька",
-    "surname": null,
-    "patronymic": null,
-    "dob": null
-  }
-},
-{
-  "model": "clients.child",
-  "pk": "45dc553e-856f-498e-9b23-ec8ff2a0dc3f",
-  "fields": {
-    "createdAt": "2023-07-18T10:18:26.802Z",
-    "updatedAt": "2023-07-18T10:18:26.802Z",
-    "name": "Петр",
-    "surname": "Иванов",
-    "patronymic": "Иванович",
-    "dob": "2023-07-18T00:00:00Z"
-  }
-},
-{
-  "model": "clients.child",
-  "pk": "c3b37e29-3c9a-4f8d-b0b6-0c4288d1879b",
-  "fields": {
-    "createdAt": "2023-07-20T11:08:08.565Z",
-    "updatedAt": "2023-07-20T11:08:08.565Z",
-    "name": "Коленька",
-    "surname": "Иванов",
-    "patronymic": null,
-    "dob": null
-  }
-},
-{
   "model": "clients.client",
   "pk": "6f628498-8ee0-455c-9238-4a8039864efb",
   "fields": {
     "createdAt": "2023-07-18T09:39:59.406Z",
-    "updatedAt": "2023-07-19T08:47:46.913Z",
+    "updatedAt": "2023-07-21T04:12:02.983Z",
     "name": "Петр",
     "surname": "Петров",
     "patronymic": "Петрович",
     "dob": "2023-05-03T00:00:00Z",
-    "passport": "aa613167-2aa5-44e7-bf27-c295da1f6a05",
+    "passport": "b97a9846-86eb-49f5-8d96-024bce5a6070",
     "livingAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
     "regAddress": "438e4ae2-37d9-4d92-83bb-3c962d0aee6d",
     "typeEducation": "higher",
@@ -2165,7 +2320,7 @@
   "pk": "7ccc9f18-bd1a-4a85-a323-e8bec11047d1",
   "fields": {
     "createdAt": "2023-07-18T09:38:26.577Z",
-    "updatedAt": "2023-07-19T08:47:39.820Z",
+    "updatedAt": "2023-07-21T04:05:33.397Z",
     "name": "Иван",
     "surname": "Иванов",
     "patronymic": "Иванович",
@@ -2178,9 +2333,7 @@
     "monExpenses": "10000.00",
     "spouse": null,
     "is_deleted": false,
-    "children": [
-      "45dc553e-856f-498e-9b23-ec8ff2a0dc3f"
-    ],
+    "children": [],
     "documentIds": [
       "e94016d9-1ada-4247-933f-16933ef06dd2",
       "ec2c1f05-8a6b-4fa5-830e-8e635e527f7b"

@@ -2,6 +2,7 @@ import uuid
 
 from django.db import models
 from django.conf import settings as s
+from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
 
 from clients.validators import (
@@ -168,6 +169,7 @@ class Passport(BaseCreatedAtUpdatedAtModel):
     class Meta:
         verbose_name = 'Паспорт'
         verbose_name_plural = 'Паспорта'
+        unique_together = (('series', 'number'),)
 
     def __str__(self):
         return (
@@ -253,7 +255,7 @@ class Client(BasePerson):
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
-        verbose_name='Супруг(а)'
+        verbose_name='Супруг(а)',
     )
 
     is_deleted = models.BooleanField(default=False)
@@ -265,6 +267,11 @@ class Client(BasePerson):
     def restore(self):
         self.is_deleted = False
         self.save()
+
+    def clean(self):
+        if self.id == self.spouse_id:
+            raise ValidationError("Нельзя подписаться на самого себя")
+
 
     class Meta:
         verbose_name = 'Клиент'

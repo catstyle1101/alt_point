@@ -6,7 +6,7 @@ from clients import models as m
 @admin.register(m.Client)
 class ClientAdmin(admin.ModelAdmin):
     list_display = ('name', 'surname', 'typeEducation', 'dob', 'monIncome')
-    list_filter = ('typeEducation', 'dob')
+    list_filter = ('typeEducation', 'dob', 'spouse')
     search_fields = ('name', 'surname')
 
 
