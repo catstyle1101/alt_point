@@ -39,7 +39,7 @@ class BasePerson(BaseCreatedAtUpdatedAtModel):
     patronymic = models.CharField(
         'Отчество', max_length=s.MAX_NAME_LENGTH, blank=True, null=True
     )
-    dob = models.DateField('День рождения', blank=True, null=True, default=datetime.date.today)
+    dob = models.DateTimeField('День рождения', blank=True, null=True, default=datetime.date.today)
 
     class Meta:
         abstract = True
@@ -113,10 +113,10 @@ class Job(BaseCreatedAtUpdatedAtModel):
     type = models.CharField(
         'Тип работы', max_length=20, choices=TYPES, blank=True
     )
-    dateEmp = models.DateField(
+    dateEmp = models.DateTimeField(
         'Дата трудоустройства', blank=True, null=True, default=datetime.date.today
     )
-    dateDismissal = models.DateField(
+    dateDismissal = models.DateTimeField(
         'Дата увольнения', blank=True, null=True, default=datetime.date.today,
     )
     monIncome = models.DecimalField(
@@ -165,7 +165,7 @@ class Passport(BaseCreatedAtUpdatedAtModel):
         validators=(passport_number_validator,),
     )
     giver = models.CharField('Кем выдан', max_length=s.MAX_GIVER_LENGTH)
-    dateIssued = models.DateField('Дата выдачи', default=datetime.date.today)
+    dateIssued = models.DateTimeField('Дата выдачи', default=datetime.date.today)
 
     class Meta:
         verbose_name = 'Паспорт'

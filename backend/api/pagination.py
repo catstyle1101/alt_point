@@ -16,7 +16,7 @@ class ProjectViewPagination(PageNumberPagination):
         return Response(
             {
                 'limit': self.get_page_size(self.request),
-                'page': self.get_page_number(self.request, self),
+                'page': int(self.get_page_number(self.request, self)),
                 'total': self.page.paginator.count,
                 'results': data,
             }

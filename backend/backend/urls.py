@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import include, path
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
@@ -25,3 +27,7 @@ urlpatterns = [
     ),
     path('', include('api.urls', namespace='api')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(
+        settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -6,6 +6,7 @@ from clients import models as m
 
 
 class PassportSerializer(s.ModelSerializer):
+
     class Meta:
         model = m.Passport
         fields = '__all__'
