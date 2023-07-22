@@ -20,7 +20,7 @@ https://gitlab.com/altpoint-test-cases/back-end
 ```
 git clone git@github.com:catstyle1101/alt_point.git
 cd alt_point
-mv .env.example .env
+cp .env.example .env
 docker-compose up
 ```
 
@@ -35,18 +35,9 @@ http://127.0.0.1:8000/api/docs/
 
 http://127.0.0.1:8000/admin/
 
+username: admin
+password: admin
 
-Чтобы создать администратора нужно ввести команду:
-
-```
-python manage.py createsuperuser
-```
-
-В приложении есть тестовая база, можно ее загрузить в БД командой
-
-```
-python manage.py loaddata db.json
-```
 
 # Задание:
 ## Уровни сложности
