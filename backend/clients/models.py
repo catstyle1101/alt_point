@@ -219,14 +219,14 @@ class Client(BasePerson):
     passport = models.OneToOneField(
         Passport, on_delete=models.SET_NULL, blank=True, null=True
     )
-    livingAddress = models.OneToOneField(
+    livingAddress = models.ForeignKey(
         Address,
         on_delete=models.SET_NULL,
         related_name='living_person',
         blank=True,
         null=True,
     )
-    regAddress = models.OneToOneField(
+    regAddress = models.ForeignKey(
         Address, on_delete=models.SET_NULL, blank=True, null=True
     )
     jobs = models.ManyToManyField(Job, related_name='emploee', blank=True)
@@ -271,7 +271,6 @@ class Client(BasePerson):
     def clean(self):
         if self.id == self.spouse_id:
             raise ValidationError("Нельзя подписаться на самого себя")
-
 
     class Meta:
         verbose_name = 'Клиент'
