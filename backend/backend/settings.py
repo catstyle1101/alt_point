@@ -3,8 +3,8 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-c079+ftmw%5togxhjo6mk*j7#*5qty=5^xe(vf3c=&+=zbd6xr')
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -81,7 +81,7 @@ LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Asia/Yekaterinburg'
 USE_I18N = True
-USE_TZ = True
+USE_TZ = False
 USE_L10N = True
 
 STATIC_URL = "/static/"

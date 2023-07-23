@@ -13,4 +13,10 @@ def custom_exception_handler(exc, context):
                 'code': 'VALIDATION_EXCEPTION',
                 'errors': response.data
             }
+        if response.status_code == status.HTTP_500_INTERNAL_SERVER_ERROR:
+            response.status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            response.data = {
+                'status': status.HTTP_500_INTERNAL_SERVER_ERROR,
+                'code': 'INTERNAL_SERVER_ERROR',
+            }
     return response

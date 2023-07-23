@@ -21,7 +21,7 @@ https://gitlab.com/altpoint-test-cases/back-end
 git clone git@github.com:catstyle1101/alt_point.git
 cd alt_point
 cp .env.example .env
-docker-compose up
+docker-compose up --build
 ```
 
 Задание изначально расчитано на Node JS, но исполнялось на Python.
